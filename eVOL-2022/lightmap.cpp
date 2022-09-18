@@ -7,17 +7,15 @@ void Lightmap()
 	{
 		if (runonce)
 		{
-			/*
-			g_Engine.OverrideLightmap(1);
-			g_Engine.SetLightmapColor(1, 1, 1);
-			g_Engine.SetLightmapDarkness(1);
-			*/
+			g_Engine.pfnSetFilterMode(1);
+			g_Engine.pfnSetFilterColor(1, 1, 1);
+			g_Engine.pfnSetFilterBrightness(1);
 			runonce = false;
 		}
 	}
 	else
 	{
-		//g_Engine.OverrideLightmap(0);
+		g_Engine.pfnSetFilterMode(0);
 		runonce = true;
 	}
 }
