@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Detours\src\creatwth.cpp" />
+    <ClCompile Include="..\Detours\src\detours.cpp" />
+    <ClCompile Include="..\Detours\src\disasm.cpp" />
+    <ClCompile Include="..\Detours\src\disolarm.cpp" />
+    <ClCompile Include="..\Detours\src\disolarm64.cpp" />
+    <ClCompile Include="..\Detours\src\disolia64.cpp" />
+    <ClCompile Include="..\Detours\src\disolx64.cpp" />
+    <ClCompile Include="..\Detours\src\disolx86.cpp" />
+    <ClCompile Include="..\Detours\src\image.cpp" />
+    <ClCompile Include="..\Detours\src\modules.cpp" />
+    <ClCompile Include="aimbot.cpp" />
+    <ClCompile Include="antiaim.cpp" />
+    <ClCompile Include="autoroute.cpp" />
+    <ClCompile Include="bass\dll.cpp" />
+    <ClCompile Include="bass\dll_image.cpp" />
+    <ClCompile Include="chatinput.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="color.cpp" />
+    <ClCompile Include="crosshair.cpp" />
+    <ClCompile Include="cvar.cpp" />
+    <ClCompile Include="esp.cpp" />
+    <ClCompile Include="fakelag.cpp" />
+    <ClCompile Include="fakeplayer.cpp" />
+    <ClCompile Include="flash.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="guiwindow.cpp" />
+    <ClCompile Include="guiwindowpop.cpp" />
+    <ClCompile Include="hitboxes.cpp" />
+    <ClCompile Include="idhook.cpp" />
+    <ClCompile Include="imgui\gl3w.cpp" />
+    <ClCompile Include="imgui\image_DXT.cpp" />
+    <ClCompile Include="imgui\image_helper.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="imgui\soil.cpp" />
+    <ClCompile Include="imgui\stb_image_aug.cpp" />
+    <ClCompile Include="killsound.cpp" />
+    <ClCompile Include="lightmap.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="modechange.cpp" />
+    <ClCompile Include="modelhitbox.cpp" />
+    <ClCompile Include="norecoil.cpp" />
+    <ClCompile Include="nospread.cpp" />
+    <ClCompile Include="offset.cpp" />
+    <ClCompile Include="opengl.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="playerdummy.cpp" />
+    <ClCompile Include="radar.cpp" />
+    <ClCompile Include="resources\gl3winit.cpp" />
+    <ClCompile Include="resources\parsemsg.cpp" />
+    <ClCompile Include="resources\stringfinder.cpp" />
+    <ClCompile Include="resources\textures.cpp" />
+    <ClCompile Include="resources\trace.cpp" />
+    <ClCompile Include="skins.cpp" />
+    <ClCompile Include="sky.cpp" />
+    <ClCompile Include="snapshot.cpp" />
+    <ClCompile Include="sound.cpp" />
+    <ClCompile Include="soundesp.cpp" />
+    <ClCompile Include="spawn.cpp" />
+    <ClCompile Include="steamid.cpp" />
+    <ClCompile Include="strafe.cpp" />
+    <ClCompile Include="strings.cpp" />
+    <ClCompile Include="studio.cpp" />
+    <ClCompile Include="studiomodelrender.cpp" />
+    <ClCompile Include="thirdperson.cpp" />
+    <ClCompile Include="tracegrenade.cpp" />
+    <ClCompile Include="usermsg.cpp" />
+    <ClCompile Include="vectorfunctions.cpp" />
+    <ClCompile Include="vector\QAngle.cpp" />
+    <ClCompile Include="viewmodel.cpp" />
+    <ClCompile Include="viewmodelchanger.cpp" />
+    <ClCompile Include="wallskin.cpp" />
+    <ClCompile Include="weapons.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Detours\src\detours.h" />
+    <ClInclude Include="..\Detours\src\detver.h" />
+    <ClInclude Include="aimbot.h" />
+    <ClInclude Include="antiaim.h" />
+    <ClInclude Include="autoroute.h" />
+    <ClInclude Include="bass\bass.h" />
+    <ClInclude Include="bass\dll.h" />
+    <ClInclude Include="chatinput.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="color.h" />
+    <ClInclude Include="crosshair.h" />
+    <ClInclude Include="cvar.h" />
+    <ClInclude Include="esp.h" />
+    <ClInclude Include="fakelag.h" />
+    <ClInclude Include="fakeplayer.h" />
+    <ClInclude Include="flash.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="guiwindow.h" />
+    <ClInclude Include="guiwindowpop.h" />
+    <ClInclude Include="hitboxes.h" />
+    <ClInclude Include="idhook.h" />
+    <ClInclude Include="imgui\gl.h" />
+    <ClInclude Include="imgui\gl3w.h" />
+    <ClInclude Include="imgui\glcorearb.h" />
+    <ClInclude Include="imgui\glu.h" />
+    <ClInclude Include="imgui\image_DXT.h" />
+    <ClInclude Include="imgui\image_helper.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_opengl2.h" />
+    <ClInclude Include="imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="imgui\khrplatform.h" />
+    <ClInclude Include="imgui\soil.h" />
+    <ClInclude Include="imgui\stbi_DDS_aug.h" />
+    <ClInclude Include="imgui\stbi_DDS_aug_c.h" />
+    <ClInclude Include="imgui\stb_image_aug.h" />
+    <ClInclude Include="imgui\stb_rect_pack.h" />
+    <ClInclude Include="imgui\stb_textedit.h" />
+    <ClInclude Include="imgui\stb_truetype.h" />
+    <ClInclude Include="killsound.h" />
+    <ClInclude Include="lightmap.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="modechange.h" />
+    <ClInclude Include="modelhitbox.h" />
+    <ClInclude Include="norecoil.h" />
+    <ClInclude Include="nospread.h" />
+    <ClInclude Include="offset.h" />
+    <ClInclude Include="opengl.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="playerdummy.h" />
+    <ClInclude Include="radar.h" />
+    <ClInclude Include="skins.h" />
+    <ClInclude Include="sky.h" />
+    <ClInclude Include="snapshot.h" />
+    <ClInclude Include="sound.h" />
+    <ClInclude Include="soundesp.h" />
+    <ClInclude Include="spawn.h" />
+    <ClInclude Include="steamid.h" />
+    <ClInclude Include="strafe.h" />
+    <ClInclude Include="strings.h" />
+    <ClInclude Include="studio.h" />
+    <ClInclude Include="studiomodelrender.h" />
+    <ClInclude Include="thirdperson.h" />
+    <ClInclude Include="tracegrenade.h" />
+    <ClInclude Include="usermsg.h" />
+    <ClInclude Include="viewmodel.h" />
+    <ClInclude Include="viewmodelchanger.h" />
+    <ClInclude Include="wallskin.h" />
+    <ClInclude Include="weapons.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fad27395-e195-44f5-b925-e234cd1948b8}</ProjectGuid>
+    <RootNamespace>eVOL2022</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)halflife\cl_dll;$(SolutionDir)halflife\common;$(SolutionDir)halflife\engine;$(SolutionDir)halflife\public;;$(SolutionDir)halflife\pm_shared</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)halflife\cl_dll;$(SolutionDir)halflife\common;$(SolutionDir)halflife\engine;$(SolutionDir)halflife\public;;$(SolutionDir)halflife\pm_shared</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)halflife\cl_dll;$(SolutionDir)halflife\common;$(SolutionDir)halflife\engine;$(SolutionDir)halflife\public;;$(SolutionDir)halflife\pm_shared</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)halflife\cl_dll;$(SolutionDir)halflife\common;$(SolutionDir)halflife\engine;$(SolutionDir)halflife\public;;$(SolutionDir)halflife\pm_shared</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
