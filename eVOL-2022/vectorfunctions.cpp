@@ -2,10 +2,10 @@
 
 float AngleBetween(Vector& v1, Vector& v2)
 {
-	v2.Normalize();
-	v1.Normalize();
+	Vector v4 = v2.Normalize();
+	Vector v3 = v1.Normalize();
 
-	return acos(DotProduct(v1, v2)) * static_cast<float>(180.0 / M_PI);
+	return acos(DotProduct(v3, v4)) * static_cast<float>(180.0 / M_PI);
 }
 
 Vector& CrossProduct(Vector& vThis, const Vector& a, const Vector& b)
