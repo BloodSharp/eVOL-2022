@@ -74,6 +74,7 @@
     <ClCompile Include="player.cpp" />
     <ClCompile Include="playerdummy.cpp" />
     <ClCompile Include="radar.cpp" />
+    <ClCompile Include="ReflectiveDllLoader\ReflectiveLoader.c" />
     <ClCompile Include="resources\gl3winit.cpp" />
     <ClCompile Include="resources\parsemsg.cpp" />
     <ClCompile Include="resources\stringfinder.cpp" />
@@ -158,6 +159,8 @@
     <ClInclude Include="player.h" />
     <ClInclude Include="playerdummy.h" />
     <ClInclude Include="radar.h" />
+    <ClInclude Include="ReflectiveDllLoader\ReflectiveDLLInjection.h" />
+    <ClInclude Include="ReflectiveDllLoader\ReflectiveLoader.h" />
     <ClInclude Include="skins.h" />
     <ClInclude Include="sky.h" />
     <ClInclude Include="snapshot.h" />
@@ -233,7 +236,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR;WIN32;_DEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -253,7 +256,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR;WIN32;NDEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -274,7 +277,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR;_DEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -294,7 +297,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR;NDEBUG;EVOL2022_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>

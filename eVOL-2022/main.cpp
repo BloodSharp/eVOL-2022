@@ -1,7 +1,7 @@
 #include "client.h"
 
-char hackdir[256];
-char hldir[256];
+char hackdir[MAX_PATH];
+char hldir[MAX_PATH];
 
 DWORD WINAPI Hook()
 {
@@ -93,7 +93,17 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpReserved)
 {
 	if (dwReason == DLL_PROCESS_ATTACH)
 	{
-		if (GetLastError() != ERROR_ALREADY_EXISTS)
+		if (lpReserved)
+		{
+			strcpy_s(hackdir, MAX_PATH - 1, (LPCSTR)lpReserved);
+			GetModuleFileName(GetModuleHandle(NULL), hldir, 255);
+			char* pos = hldir + strlen(hldir);
+			while (pos >= hldir && *pos != '\\')
+				--pos;
+			pos[1] = 0;
+			CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)Hook, NULL, NULL, NULL);
+		}
+		else if (hinstDLL && GetLastError() != ERROR_ALREADY_EXISTS)
 		{
 			DisableThreadLibraryCalls(hinstDLL);
 			GetModuleFileName(hinstDLL, hackdir, 255);

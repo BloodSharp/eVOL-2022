@@ -31,6 +31,12 @@
     <Filter Include="Archivos de encabezado\Detours">
       <UniqueIdentifier>{93f6a6b2-4882-4340-9154-4ddde38be15c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de origen\ReflectiveDllLoader">
+      <UniqueIdentifier>{0fc49b00-b866-42bd-b295-a8ada3f6d955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\ReflectiveDllLoader">
+      <UniqueIdentifier>{0ae7ff2b-3f54-4855-8ec4-d25a7c49478e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="aimbot.cpp">
@@ -273,6 +279,9 @@
     <ClCompile Include="..\Detours\src\modules.cpp">
       <Filter>Archivos de origen\Detours</Filter>
     </ClCompile>
+    <ClCompile Include="ReflectiveDllLoader\ReflectiveLoader.c">
+      <Filter>Archivos de origen\ReflectiveDllLoader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aimbot.h">
@@ -499,6 +508,12 @@
     </ClInclude>
     <ClInclude Include="..\Detours\src\detver.h">
       <Filter>Archivos de encabezado\Detours</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveDllLoader\ReflectiveLoader.h">
+      <Filter>Archivos de encabezado\ReflectiveDllLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveDllLoader\ReflectiveDLLInjection.h">
+      <Filter>Archivos de encabezado\ReflectiveDllLoader</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

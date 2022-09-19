@@ -27,8 +27,8 @@
 #include <list>
 
 //using namespace std;
-extern char hackdir[256];
-extern char hldir[256];
+extern char hackdir[MAX_PATH];
+extern char hldir[MAX_PATH];
 
 #include "bass/dll.h"
 #include "bass/bass.h"
