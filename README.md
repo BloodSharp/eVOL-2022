@@ -8,6 +8,7 @@ BloodSharp's fork from Putte vigga's cheat source code.
 ## New features
 - Reflective DLL Injection based loader, special thanks to Stephen Fewer.
 - Backtrack (In todo list).
+- Using the latest Half-Life SDK (patches included to compile cheats and updated structures) and a modern Detours library.
 
 ## Licenses
 - The dll is released under MIT license with the RDI component is BSD.
