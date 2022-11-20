@@ -1,6 +1,6 @@
 [submodule "halflife"]
 	path = halflife
-	url = https://github.com/BloodSharp/halflife
+	url = https://github.com/BloodSharp/halflife.git
 [submodule "Detours"]
 	path = Detours
-	url = https://github.com/microsoft/Detours
+	url = https://github.com/microsoft/Detours.git
