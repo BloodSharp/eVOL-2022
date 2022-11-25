@@ -138,15 +138,6 @@ pfnUserMsgHook HookUserMsg(const char* szMsgName, pfnUserMsgHook pfn)
 	}
 	
 	c_Offset.Error("Couldn't find '%s' message.", szMsgName);
-	
-	/*else
-	{
-		char Message[256];
-		strcpy(Message, "ERROR: Couldn't find ");
-		strcat(Message, szMsgName);
-		strcat(Message, " message.");
-		c_Offset.Error(Message);
-	}*/
 }
 
 void HookUserMessages()
