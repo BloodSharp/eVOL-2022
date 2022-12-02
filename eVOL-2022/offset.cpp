@@ -423,6 +423,25 @@ DWORD AutoOffset::Steam_GSInitiateGameConnection(void)
 	return Address;
 }
 
+DWORD AutoOffset::FindNetchanTransmit()
+{
+	DWORD Address = FindPattern("%s:Outgoing message overflow", HwBase, HwEnd, 0);
+	Address = FindReference(HwBase, HwEnd, Address) - 0x5B;
+
+	if (FarProc(Address, HwBase, HwEnd))
+		Error("Couldn't find %s.", __FUNCTION__);
+
+	int limit = 0;
+
+	while (*(PBYTE)Address == 0x90) {
+		Address += 0x1;
+		limit += 1;
+		if (limit > 30) break;
+	}
+
+	return Address;
+}
+
 DWORD FindCodeAddress(DWORD dwStart, DWORD dwEnd, LPBYTE bCode, UINT CodeSize, INT OpcodeNum, BOOL bPattern)
 {
 	DWORD i;

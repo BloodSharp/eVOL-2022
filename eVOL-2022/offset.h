@@ -48,6 +48,7 @@ public:
 	DWORD PreS_DynamicSound(void);
 	DWORD Steam_GSInitiateGameConnection(void);
 	DWORD FindInterface(DWORD GetStudioModelInterfaceAddress);
+	DWORD FindNetchanTransmit();
 	PUserMsg FindUserMsgBase();
 };
 extern AutoOffset c_Offset;
