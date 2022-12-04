@@ -7,7 +7,7 @@ void PreS_DynamicSound(int entid, DWORD entchannel, char* szSoundFile, float* fO
 {
 	if (szSoundFile && fOrigin)
 	{
-		if (!strstr(szSoundFile, "pl_shell") && !strstr(szSoundFile, "ric") && !strstr(szSoundFile, "die") && !strstr(szSoundFile, "glass") && !strstr(szSoundFile, "debris") && !strstr(szSoundFile, "death") && strstr(szSoundFile, "player"))
+		if (!strstr(szSoundFile, "pl_shell") && !strstr(szSoundFile, "ric") /*&& !strstr(szSoundFile, "die")*/ && !strstr(szSoundFile, "glass") && !strstr(szSoundFile, "debris") /*&& !strstr(szSoundFile, "death")*/ && strstr(szSoundFile, "player"))
 		{
 			if (entid > 0 && entid < 33)
 			{
