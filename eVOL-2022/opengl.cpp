@@ -1,11 +1,5 @@
 #include "client.h"
 
-typedef BOOL (APIENTRY* wglSwapBuffers_t)(HDC  hdc);
-typedef void (APIENTRY* glClear_t)(GLbitfield mask);
-typedef void (APIENTRY* glColor4f_t)(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
-typedef void (__stdcall* glReadPixels_t)(GLint, GLint, GLsizei, GLsizei, GLenum, GLenum, GLvoid*); 
-typedef void (APIENTRY* glVertex3fv_t)(GLfloat *v);
-
 wglSwapBuffers_t pwglSwapBuffers = NULL;
 glClear_t pglClear = NULL;
 glColor4f_t pglColor4f = NULL;
@@ -40,19 +34,13 @@ void APIENTRY Hooked_glClear(GLbitfield mask)
 	pglClear(mask);
 }
 
-void __stdcall Hooked_glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid* pixels)
+void APIENTRY Hooked_glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid* pixels)
 {
-	if (ScreenFirst || !cvar.snapshot_memory)
-	{
-		dwSize = (width * height) * 3;
-		BufferScreen = (PBYTE)malloc(dwSize);
-		pglReadPixels(x, y, width, height, format, type, pixels);
-		memcpy(BufferScreen, pixels, dwSize);
-		DrawVisuals = true;
-		ScreenFirst = false;
-		return;
-	}
-	memcpy(pixels, BufferScreen, dwSize);
+	GLuint uiImageSize = width * height * 3;
+	if (BufferScreen.size() && BufferScreen.size() <= uiImageSize)
+		memcpy(pixels, BufferScreen.data(), uiImageSize);
+	else
+		memset(pixels, 0, uiImageSize);
 }
 
 void APIENTRY Hooked_glColor4f(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)

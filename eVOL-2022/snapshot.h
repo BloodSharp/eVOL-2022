@@ -2,7 +2,7 @@
 #define _SNAP_
 
 extern bool ScreenFirst, DrawVisuals;
-extern PBYTE BufferScreen;
+extern std::vector<byte> BufferScreen;
 extern int temp;
 extern DWORD dwSize, time_scr;
 void Snapshot();

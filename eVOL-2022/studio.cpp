@@ -76,7 +76,7 @@ void StudioEntityLight(struct alight_s* plight)
 
 		plight->plightvec = origin;
 	}
-	if (ent && ent->player && cvar.visual_lambert)
+	if (ent && ent->player && cvar.visual_lambert && DrawVisuals)
 	{
 		plight->ambientlight = 128;
 		plight->shadelight = 192;
