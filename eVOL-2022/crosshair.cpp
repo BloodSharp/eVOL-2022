@@ -122,13 +122,13 @@ void CalculateCrosshairSize()
 			size = -1;
 	}
 
-	if (!stricmp(value, "auto"))
+	if (!_stricmp(value, "auto"))
 		size = 0;
-	else if (!stricmp(value, "small"))
+	else if (!_stricmp(value, "small"))
 		size = 1;
-	else if (!stricmp(value, "medium"))
+	else if (!_stricmp(value, "medium"))
 		size = 2;
-	else if (!stricmp(value, "large"))
+	else if (!_stricmp(value, "large"))
 		size = 3;
 
 	if (size == -1)

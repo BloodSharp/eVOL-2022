@@ -12,6 +12,8 @@
 #pragma warning(disable:4409)
 #pragma warning(disable:4002)
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #define _USE_MATH_DEFINES
 #define IMGUI_DEFINE_MATH_OPERATORS
 

@@ -305,7 +305,7 @@ void FakePlayerHitboxes(cl_entity_s* ent)
 		{
 			char modelname[255];
 			strcpy(modelname, pbones[i].name);
-			strlwr(modelname);
+			_strlwr(modelname);
 
 			if (strstr(modelname, "head"))
 			{
@@ -483,7 +483,7 @@ void FakePlayerSelectedHitboxes(cl_entity_s* ent)
 		{
 			char modelname[255];
 			strcpy(modelname, pbones[i].name);
-			strlwr(modelname);
+			_strlwr(modelname);
 
 			if (strstr(modelname, "head"))
 			{
@@ -667,7 +667,7 @@ void PlayerHitboxes(cl_entity_s* ent)
 		{
 			char modelname[255];
 			strcpy(modelname, pbones[i].name);
-			strlwr(modelname);
+			_strlwr(modelname);
 
 			if (strstr(modelname, "head"))
 			{
