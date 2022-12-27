@@ -74,6 +74,8 @@ bool StringFinder::it_running()
 void StringFinder::it_next()
 {
 	++THE_POS;
+	if (THE_POS == THE_MAP.end())
+		return;
 	num = THE_POS->second;
 	str = THE_POS->first.c_str();
 }
