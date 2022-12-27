@@ -64,8 +64,8 @@ int DeathMsg(const char *pszName, int iSize, void *pbuf)
 	if (killer != victim && killer == pmove->player_index + 1 && victim > 0 && victim <= g_Engine.GetMaxClients())
 		dwReactionTime = GetTickCount();
 
-	if (victim != pmove->player_index + 1 && victim > 0 && victim <= g_Engine.GetMaxClients())
-		g_Player[victim].iHealth = 100;
+	//if (victim != pmove->player_index + 1 && victim > 0 && victim <= g_Engine.GetMaxClients())
+	//	g_Player[victim].iHealth = 100;
 	
 	cl_entity_s* ent = g_Engine.GetEntityByIndex(victim);
 	player_info_s* player = g_Studio.PlayerInfo(victim - 1);
